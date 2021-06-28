@@ -27,7 +27,6 @@ fun createConfig(arguments: Map<String, Any>, context: Context) {
                 .withStorage(SharedPreferenceStorage(context))
                 .withOktaHttpClient(HttpClientImpl(params.userAgentTemplate))
                 .setRequireHardwareBackedKeyStore(params.requireHardwareBackedKeyStore)
-                .supportedBrowsers("com.android.chrome", "com.google.android.apps.chrome", "com.android.chrome.beta")
                 .create()
 
         val authClient = Okta.AuthBuilder()
